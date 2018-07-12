@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>com.your.company.unique.plugin.id</id>
-    <name>Plugin display name here</name>
+    <name>android-selector-chapek</name>
     <version>1.0</version>
     <vendor email="zhenxinAngel@vip.qq.com" url="http://zhangxichao.me">Z.xichao</vendor>
 
@@ -9,7 +9,58 @@
     ]]></description>
 
     <change-notes><![CDATA[
-      在android-selector-chapek基础上进行更新，兼容android studio2.3<br>
+        在android-selector-chapek基础上进行更新，兼容android studio2.3<br>
+        <h3>Mapping</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>File name suffix</th>
+                    <th>Drawable state</th>
+                </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>_normal</td>
+                <td>(default state)</td>
+            </tr>
+            <tr>
+                <td>_pressed</td>
+                <td>state_pressed</td>
+            </tr>
+            <tr>
+                <td>_focused</td>
+                <td>state_focused</td>
+            </tr>
+            <tr>
+                <td>_disabled</td>
+                <td>state_enabled (false)</td>
+            </tr>
+            <tr>
+                <td>_checked</td>
+                <td>state_checked</td>
+            </tr>
+            <tr>
+                <td>_selected</td>
+                <td>state_selected</td>
+            </tr>
+            <tr>
+                <td>_hovered</td>
+                <td>state_hovered</td>
+            </tr>
+            <tr>
+                <td>_checkable</td>
+                <td>state_checkable</td>
+            </tr>
+            <tr>
+                <td>_activated</td>
+                <td>state_activated</td>
+            </tr>
+            <tr>
+                <td>_windowfocused</td>
+                <td>state_window_focused</td>
+            </tr>
+        </tbody>
+<
     ]]>
     </change-notes>
 
