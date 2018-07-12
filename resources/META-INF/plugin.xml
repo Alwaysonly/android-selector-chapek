@@ -1,0 +1,34 @@
+<idea-plugin>
+    <id>com.your.company.unique.plugin.id</id>
+    <name>Plugin display name here</name>
+    <version>1.0</version>
+    <vendor email="zhenxinAngel@vip.qq.com" url="http://zhangxichao.me">Z.xichao</vendor>
+
+    <description><![CDATA[
+      快速生成drawable.xml
+    ]]></description>
+
+    <change-notes><![CDATA[
+      在android-selector-chapek基础上进行更新，兼容android studio2.3<br>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="107.105"/>
+
+    <depends>com.intellij.modules.lang</depends>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id="android-selector-chapek" class="main.SelectorChapekAction" text="Generate Android Selectors"
+                description="Automatically generates drawable selectors from appropriately named resources">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="after"
+                          relative-to-action="ProjectViewPopupMenuRefactoringGroup"/>
+        </action>
+    </actions>
+
+</idea-plugin>
